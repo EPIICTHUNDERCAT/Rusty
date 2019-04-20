@@ -5,6 +5,11 @@ import java.util.Random;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import com.epiicthundercat.rusty.events.animalevents.DropsBear;
+import com.epiicthundercat.rusty.events.animalevents.DropsHorse;
+import com.epiicthundercat.rusty.events.animalevents.DropsPig;
+import com.epiicthundercat.rusty.events.animalevents.DropsWolf;
+
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
@@ -36,7 +41,10 @@ public class Rusty {
 
 	private void setup(final FMLCommonSetupEvent event) {
 		// Pre Init Code (Register events, etc.)
-
+		MinecraftForge.EVENT_BUS.register(new DropsHorse());
+		MinecraftForge.EVENT_BUS.register(new DropsBear());
+		MinecraftForge.EVENT_BUS.register(new DropsPig());
+		MinecraftForge.EVENT_BUS.register(new DropsWolf());
 	}
 
 	private void clientSideSet(final FMLClientSetupEvent event) {
