@@ -1,0 +1,7 @@
+    
+{
+    "parent": "item/generated",
+    "textures": {
+        "layer0": "rusty:items/sheet_metal"
+    }
+}

@@ -1,0 +1,12 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"ingredients": [
+		{
+			"item": "rusty:animal_fat"
+		}
+	],
+	"result": {
+		"item": "rusty:low_grade_fuel",
+		"count": 9
+	}
+}
